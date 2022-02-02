@@ -15,9 +15,9 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/WordCodec.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
+import "../../../solidity-utils/contracts/openzeppelin/ReentrancyGuard.sol";
+import "../../../solidity-utils/contracts/helpers/WordCodec.sol";
+import "../../../solidity-utils/contracts/math/Math.sol";
 
 import "../BaseWeightedPool.sol";
 import "./WeightCompression.sol";

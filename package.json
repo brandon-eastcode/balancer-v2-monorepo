@@ -30,5 +30,10 @@
   "workspaces": [
     "pkg/*",
     "pvt/*"
-  ]
+  ],
+  "dependencies": {
+    "@poanet/solidity-flattener": "^3.0.6",
+    "@remix-project/remixd": "^0.5.6",
+    "hardhat": "^2.8.3"
+  }
 }

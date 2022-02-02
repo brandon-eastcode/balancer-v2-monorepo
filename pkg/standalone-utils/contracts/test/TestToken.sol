@@ -14,10 +14,10 @@
 
 pragma solidity ^0.7.0;
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Burnable.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/ERC20Permit.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/AccessControl.sol";
+import "../../../solidity-utils/contracts/openzeppelin/ERC20.sol";
+import "../../../solidity-utils/contracts/openzeppelin/ERC20Burnable.sol";
+import "../../../solidity-utils/contracts/openzeppelin/ERC20Permit.sol";
+import "../../../solidity-utils/contracts/openzeppelin/AccessControl.sol";
 
 contract TestToken is AccessControl, ERC20, ERC20Burnable, ERC20Permit {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");

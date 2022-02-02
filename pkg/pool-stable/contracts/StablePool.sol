@@ -15,13 +15,13 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/WordCodec.sol";
+import "../../solidity-utils/contracts/math/FixedPoint.sol";
+import "../../solidity-utils/contracts/helpers/InputHelpers.sol";
+import "../../solidity-utils/contracts/helpers/WordCodec.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/BaseGeneralPool.sol";
-import "@balancer-labs/v2-pool-utils/contracts/LegacyBaseMinimalSwapInfoPool.sol";
-import "@balancer-labs/v2-pool-utils/contracts/interfaces/IRateProvider.sol";
+import "../../pool-utils/contracts/BaseGeneralPool.sol";
+import "../../pool-utils/contracts/LegacyBaseMinimalSwapInfoPool.sol";
+import "../../pool-utils/contracts/interfaces/IRateProvider.sol";
 
 import "./StableMath.sol";
 import "./StablePoolUserData.sol";

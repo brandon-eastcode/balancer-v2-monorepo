@@ -17,7 +17,7 @@ import "./aave/ILendingPool.sol";
 import "./aave/IAaveIncentivesController.sol";
 
 import "./RewardsAssetManager.sol";
-import "@balancer-labs/v2-distributors/contracts/interfaces/IMultiDistributor.sol";
+import "../../distributors/contracts/interfaces/IMultiDistributor.sol";
 
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;

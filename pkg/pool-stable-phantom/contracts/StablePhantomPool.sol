@@ -15,13 +15,13 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-pool-stable/contracts/StablePool.sol";
-import "@balancer-labs/v2-pool-utils/contracts/rates/PriceRateCache.sol";
-import "@balancer-labs/v2-pool-utils/contracts/interfaces/IRateProvider.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/ERC20Helpers.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol";
+import "../../pool-stable/contracts/StablePool.sol";
+import "../../pool-utils/contracts/rates/PriceRateCache.sol";
+import "../../pool-utils/contracts/interfaces/IRateProvider.sol";
+import "../../solidity-utils/contracts/math/Math.sol";
+import "../../solidity-utils/contracts/math/FixedPoint.sol";
+import "../../solidity-utils/contracts/helpers/ERC20Helpers.sol";
+import "../../solidity-utils/contracts/helpers/BalancerErrors.sol";
 
 import "./StablePhantomPoolUserDataHelpers.sol";
 

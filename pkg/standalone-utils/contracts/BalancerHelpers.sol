@@ -15,19 +15,19 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
+import "../../solidity-utils/contracts/math/Math.sol";
+import "../../solidity-utils/contracts/math/FixedPoint.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/InputHelpers.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol";
+import "../../solidity-utils/contracts/helpers/InputHelpers.sol";
+import "../../solidity-utils/contracts/helpers/BalancerErrors.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol";
+import "../../solidity-utils/contracts/misc/IWETH.sol";
 
-import "@balancer-labs/v2-vault/contracts/AssetHelpers.sol";
-import "@balancer-labs/v2-vault/contracts/interfaces/IVault.sol";
-import "@balancer-labs/v2-vault/contracts/balances/BalanceAllocation.sol";
+import "../../vault/contracts/AssetHelpers.sol";
+import "../../vault/contracts/interfaces/IVault.sol";
+import "../../vault/contracts/balances/BalanceAllocation.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/BasePool.sol";
+import "../../pool-utils/contracts/BasePool.sol";
 
 /**
  * @dev This contract simply builds on top of the Balancer V2 architecture to provide useful helpers to users.

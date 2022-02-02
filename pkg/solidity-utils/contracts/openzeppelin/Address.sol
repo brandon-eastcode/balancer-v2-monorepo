@@ -115,7 +115,7 @@ library Address {
      *
      * _Available since v4.3._
      */
-    function verifyCallResult(bool success, bytes memory returndata) internal pure returns (bytes memory) {
+    function verifyCallResult(bool success, bytes memory returndata) internal pure returns (bytes memory a) {
         if (success) {
             return returndata;
         } else {

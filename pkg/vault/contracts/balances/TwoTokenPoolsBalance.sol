@@ -15,8 +15,8 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol";
+import "../../../solidity-utils/contracts/helpers/BalancerErrors.sol";
+import "../../../solidity-utils/contracts/openzeppelin/IERC20.sol";
 
 import "./BalanceAllocation.sol";
 import "../PoolRegistry.sol";
@@ -303,7 +303,7 @@ abstract contract TwoTokenPoolsBalance is PoolRegistry {
      *
      * - `token` must be registered in the Pool
      */
-    function _getTwoTokenPoolBalance(bytes32 poolId, IERC20 token) internal view returns (bytes32) {
+    function _getTwoTokenPoolBalance(bytes32 poolId, IERC20 token) internal view returns (bytes32 a) {
         // We can't just read the balance of token, because we need to know the full pair in order to compute the pair
         // hash and access the balance mapping. We therefore rely on `_getTwoTokenPoolBalances`.
         (, IERC20 tokenA, bytes32 balanceA, IERC20 tokenB, bytes32 balanceB) = _getTwoTokenPoolBalances(poolId);

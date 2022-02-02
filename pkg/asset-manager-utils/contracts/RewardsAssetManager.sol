@@ -12,13 +12,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import "@balancer-labs/v2-vault/contracts/interfaces/IVault.sol";
+import "../../vault/contracts/interfaces/IVault.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/interfaces/IRelayedBasePool.sol";
+import "../../pool-utils/contracts/interfaces/IRelayedBasePool.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/openzeppelin/IERC20.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
+import "../../solidity-utils/contracts/openzeppelin/IERC20.sol";
+import "../../solidity-utils/contracts/math/Math.sol";
+import "../../solidity-utils/contracts/math/FixedPoint.sol";
 
 import "./IAssetManager.sol";
 

@@ -15,7 +15,7 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-solidity-utils/contracts/misc/IWETH.sol";
+import "../../solidity-utils/contracts/misc/IWETH.sol";
 
 import "./interfaces/IAuthorizer.sol";
 

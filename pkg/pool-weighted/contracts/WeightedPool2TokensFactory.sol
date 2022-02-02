@@ -15,10 +15,10 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-vault/contracts/interfaces/IVault.sol";
+import "../../vault/contracts/interfaces/IVault.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/factories/BasePoolSplitCodeFactory.sol";
-import "@balancer-labs/v2-pool-utils/contracts/factories/FactoryWidePauseWindow.sol";
+import "../../pool-utils/contracts/factories/BasePoolSplitCodeFactory.sol";
+import "../../pool-utils/contracts/factories/FactoryWidePauseWindow.sol";
 
 import "./WeightedPool2Tokens.sol";
 

@@ -15,7 +15,7 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-pool-utils/contracts/controllers/ManagedPoolController.sol";
+import "../../../pool-utils/contracts/controllers/ManagedPoolController.sol";
 
 import "./BaseManagedPoolFactory.sol";
 
