@@ -10,6 +10,8 @@ $ remixd -s ./
 
 ## Deploying
 
+The list is currently in the order they should be deployed.
+
 ### Authorizer
 
 Compile version 0.7.6
