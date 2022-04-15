@@ -33,6 +33,20 @@ Compile version 0.7.1
 constructor (address Vault)
 \*\* note: Make sure to Enable optimization
 
+### WeightedPoolFactory
+
+Compile version 0.7.1
+constructor (address Vault)
+\*\* note: Make sure to Enable optimization
+\*\* note: This may be needed to be deployed to sync with the subgraphs (does not need to be verified)
+
+### WeightedPool2TokensFactory
+
+Compile version 0.7.1
+constructor (address Vault)
+\*\* note: Make sure to Enable optimization
+\*\* note: This may be needed to be deployed to sync with the subgraphs (does not need to be verified)
+
 ## Verification
 
 ### Authorizer
@@ -141,8 +155,8 @@ StablePoolFactory is verified by multi files (41 files)
 ### StablePhantomPoolFactory
 
 StablePhantomPoolfactory was verified with a flattened file containing all the contract code. Flatenned contracts can normally be used for quick verifications, but typical flatenning tools like remix didn't work with these contracts. Instead, it was flattened manually.
-** note: This contract had to deploy this a few time before it was able to get this verified
-** note: The files below are the order they need to be in if flattened manueally but multi file might work as well
+\*\* note: This contract had to deploy this a few time before it was able to get this verified
+\*\* note: The files below are the order they need to be in if flattened manueally but multi file might work as well
 
 1. BalancerErrors.sol
 2. IERC20.sol
