@@ -1,6 +1,8 @@
 # Deployment
 
-Deploy everything through remix but remix can only bring in a limited amount of files and it cut out the balancer node module so change the import statements so they import the local contracts versions in it's own pkg folder.
+This is a fork of the balancer system https://github.com/balancer-labs/balancer-v2-monorepo. Balancer has a number of different types of pools including weighted, stable, and linear pools.
+
+For deployment of existing contract, we made use of Remix https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js, which is contract deployment of smart contracts. Remix can only bring in a limited amount of files and it cuts out the balance’s node_module folder, so change the import statements to import the local contract versions in its own pkg folder.
 
 To connect remix to a localhost using this command in your local directory:
 
@@ -10,20 +12,26 @@ $ remixd -s ./
 
 ## Deploying
 
-The list is currently in the order they should be deployed.
+The following are the smart contracts for the balancer, listed in the order they should be deployed, along with the params for each of their constructors. 
 
 ### Authorizer
+
+This will control all authorized users for the vault and factories
 
 Compile version 0.7.6
 constructor (address Admin)
 
 ### Vault
 
+This contract will hold all the tokens staked in pools.
+
 Compile version 0.7.6
 constructor (address Authorizer, address WETH, uint256 PauseWindowDuration, uint256 BufferPeriodDuration)
-\*\* note: Make sure to Enable optimization
+\*\* note: Make sure to Enable optimization (It's a checkbox in the compiler options)
 
 ### StablePoolFactory
+
+These are all factories to make staking pools
 
 Compile version 0.7.6
 constructor (address Vault)
@@ -54,6 +62,7 @@ constructor (address Vault)
 ### Authorizer
 
 Authorizer will flatten with remix flattener
+\*\* note: the remix flattener is a extension that can be added to remix
 
 ### Vault
 
@@ -156,7 +165,7 @@ StablePoolFactory is verified by multi files (41 files)
 
 ### StablePhantomPoolFactory
 
-StablePhantomPoolfactory was verified with a flattened file containing all the contract code. Flatenned contracts can normally be used for quick verifications, but typical flatenning tools like remix didn't work with these contracts. Instead, it was flattened manually.
+StablePhantomPoolfactory was verified with a flattened file containing all the contract code. Flatened contracts can normally be used for quick verifications, but typical flatenning tools like remix didn't work with these contracts. Instead, it was flattened manually.
 \*\* note: This contract had to deploy this a few time before it was able to get this verified
 \*\* note: The files below are the order they need to be in if flattened manueally but multi file might work as well
 
